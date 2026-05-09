@@ -3,19 +3,32 @@
 :root {
   --font-display: 'Space Grotesk', system-ui, sans-serif;
   --font-mono: 'Space Mono', monospace;
+  --font-arial: 'Arial', sans-serif;
+  --font-heading: 'Nasalization', 'Space Grotesk', system-ui, sans-serif;
   --nav-height: 76px;
   --text-muted: #333;
 }
 
 /* ================= GLOBAL RESET ================= */
 
+@font-face {
+  font-family: 'Nasalization';
+  src: url('resources/Nasalization Rg.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: var(--font-display);
+  font-family: Arial, sans-serif;
   background: #ffffff;
   color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
 }
 
 /* Only lock scroll when snap mode is active */
@@ -94,7 +107,7 @@ body.snap-mode {
 /* ================= TYPOGRAPHY ================= */
 
 .title {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 800;
   line-height: 1.05;
@@ -116,9 +129,10 @@ body.snap-mode {
 /* ================= NAVBAR ================= */
 
 .navbar-brand {
-  font-family: var(--font-mono);
+  font-family: var(--font-heading);
   font-weight: 700;
   letter-spacing: 0.12em;
+  margin-left: 2rem;
 }
 
 .nav-link {
@@ -177,7 +191,7 @@ body.snap-mode {
 }
 
 .projects-title {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 800;
   letter-spacing: -0.02em;
@@ -227,6 +241,7 @@ body.snap-mode {
 }
 
 .project-card h3 {
+  font-family: var(--font-heading);
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 0.75rem;
@@ -348,14 +363,14 @@ body.snap-mode {
 
 /* TEXT */
 .about-title {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 800;
   margin-bottom: 1.5rem;
 }
 
 .about-desc {
-  font-family: var(--font-mono);
+  font-family: var(--font-arial);
   font-size: 0.95rem;
   letter-spacing: 0.08em;
   line-height: 1.7;
@@ -416,7 +431,7 @@ body.snap-mode {
 
 /* LEFT */
 .contact-title {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 800;
   margin-bottom: 1.5rem;
