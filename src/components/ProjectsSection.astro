@@ -1,0 +1,50 @@
+---
+// ProjectsSection.astro - Projects section from index.html
+import ProjectCard from './ProjectCard.astro';
+---
+<section id="projects" class="snap projects-section">
+  <div class="projects-layout">
+    <div class="projects-main">
+      <!-- LEFT -->
+      <div class="projects-info">
+        <h2 class="projects-title">Projects</h2>
+        <p class="projects-desc">
+          A collection of open-source aerospace, robotics, and experimental
+          engineering projects developed by the Roketry community.
+        </p>
+      </div>
+
+      <!-- BLOCKS BELOW SUBTITLE -->
+      <div class="projects-slider">
+        <div class="project-card">
+          <h3>Solid Rocket Motor</h3>
+          <p>Design and static testing of small-scale SRMs.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Avionics Stack</h3>
+          <p>Flight computer, telemetry, and recovery systems.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Launch Rail System</h3>
+          <p>Modular rail-based launch infrastructure.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>CFD Simulation</h3>
+          <p>Aerodynamic analysis of rocket bodies.</p>
+        </div>
+
+        <div class="project-card more-card">
+          <span><a href="/projects">View All Projects →</a></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: FAINT IMAGE PLACEHOLDER -->
+    <div class="projects-image-placeholder" aria-hidden="true">
+      <span>PROJECT VISUAL</span>
+    </div>
+  </div>
+</section>
