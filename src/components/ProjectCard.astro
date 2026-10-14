@@ -1,0 +1,12 @@
+---
+// ProjectCard.astro - Reusable project card
+interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props;
+---
+<div class="project-card">
+  <h3>{title}</h3>
+  <p>{description}</p>
+</div>
